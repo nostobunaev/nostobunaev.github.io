@@ -1,0 +1,170 @@
+.header {
+    background-color: rgb(231, 201, 201);
+    overflow: hidden;
+}
+
+.header img {
+    width: 60px;
+    height: 40px;
+    float: left;
+}
+
+a.button1 {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+a.button2 {
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.header a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.header a.active {
+    background-color: #a76e18;
+    color: white;
+}
+
+body {
+    margin: 0%;
+    font-family: Garamond, serif;
+}
+
+.info {
+    float:left;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    width: 400px;
+    margin: auto;
+}
+
+.info h1 {
+    font-size: 30pt;
+}
+
+.info p {
+    font-size: 18pt;
+}
+
+a.button3 {
+    position: absolute;
+    left: 120px;
+    font-weight: 400;
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    padding: 6px;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    background: rgb(226, 208, 208);
+    box-shadow: 3px 3px 0px rgb(0, 0, 0);
+    transition: 0.2s;
+} 
+
+a.button3:hover { 
+    background: rgb(204, 192, 190); 
+}
+
+a.button3:active {
+background: rgb(204, 192, 190);
+box-shadow: 0 3px rgb(167, 149, 145) inset;
+}
+
+#imgB {
+    position: relative;
+    left: 50px;
+    top:50px;
+}
+
+.service {
+    float: left;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.service p{
+    position: absolute;
+    left: 540px;
+    top: 200px;
+    font-size: 20pt;
+}
+
+a.buttonR {
+    position: absolute;
+    left: 400px;
+    top: 300px;
+    text-decoration:none;
+    font-size: 18pt;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    padding: 6px;
+}
+
+a.buttonR:hover { 
+    background: rgb(204, 192, 190); 
+}
+
+a.buttonR:active {
+background: rgb(204, 192, 190);
+box-shadow: 0 3px rgb(167, 149, 145) inset;
+}
+
+a.buttonF {
+    position: absolute;
+    left: 730px;
+    top: 300px;
+    text-decoration: none;
+    font-size: 18pt;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    padding: 6px;
+
+}
+
+a.buttonF:hover { 
+    background: rgb(204, 192, 190); 
+}
+
+a.buttonF:active {
+background: rgb(204, 192, 190);
+box-shadow: 0 3px rgb(167, 149, 145) inset;
+}
+
+.content {
+    float: left;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.about {
+    float:left;
+    position: relative;
+    left: 50px;
+    top: 100px;
+    width: 700px;
+    margin: auto;
+}
+
+
