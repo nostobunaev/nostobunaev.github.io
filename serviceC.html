@@ -15,11 +15,11 @@
         <a href="about.html" class="button2">About page</a>
     </div>
     <div class="content">
-        <p>Specify the field of service looking for</p>
+        <h1>Specify the field of service looking for:</h1>
         <form class="formService">
             <div class="fcombobox">
-                <label for="servicecombo">Choose a car:</label>
-                <select name="services" id="servicecombo">
+                <label for="servicecombo">Choose a service:</label>
+                <br><select name="services" id="servicecombo">
                     <option value="locksmith">Locksmith</option>
                     <option value="moving">moving</option>
                     <option value="auto">Auro repair</option>
@@ -30,19 +30,22 @@
                 </select>
             </div>
             <div class="ftitle">
-                <label class="title">Write a title</label>
-                <input type="text" name="title">
+                <label class="title">Write a title:</label>
+                <br><input type="text" name="title">
             </div>
             <div class fdescription>
-                <label class="description">Write a description</label>
-                <textarea rows="4" cols="40" name="description"></textarea>
+                <label class="description">Write a description:</label>
+                <textarea rows="4" cols="32" name="description"></textarea>
             </div>
             <div class="fprice">
-                <label class="price">Set price</label>
+                <label class="price">Set price:</label>
                 <input type="text" name="price">
+                <label:before>$</label:before>
             </div>
             
-            <input type="submit" value="Submit">
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
         </form>
     </div>
 </body>
