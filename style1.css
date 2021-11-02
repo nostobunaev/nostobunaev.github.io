@@ -43,11 +43,11 @@ body {
 }
 
 .info {
-    float:left;
+    float: center;
     position: relative;
-    left: 50px;
+    left: 0px;
     top: 100px;
-    width: 400px;
+    width: 600px;
     margin: auto;
 }
 
@@ -61,7 +61,7 @@ body {
 
 a.button3 {
     position: absolute;
-    left: 120px;
+    left: 0px;
     font-weight: 400;
     font-size: 15pt;
     color: black;
@@ -191,4 +191,79 @@ box-shadow: 0 3px rgb(167, 149, 145) inset;
     margin: auto;
 }
 
+input.error  {
+    border: 2px solid red;
+}
 
+.hide {
+	display: none;
+}
+
+#formErrors {
+    color: red;
+    font-size: 12px;
+}
+
+.content2 {
+
+    color: black;
+    text-align: left;
+    justify-content: center;
+    margin: 5px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 30%;
+    padding: 30px 40px 40px 90px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 35%;
+    top: 70px;
+    align-items: center;
+}
+
+.content2 h1 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+.content2 input {
+    display: flex;
+}
+
+.buttonLogin {
+    position: flex;
+    text-decoration:none;
+    font-size: 12pt;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    padding: 0px;
+}
+
+.buttonReg {
+    position: flex;
+    text-decoration:none;
+    font-size: 12pt;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    padding: 0px;
+}
+
+.buttonRecover {
+    position: flex;
+    text-decoration:none;
+    font-size: 12pt;
+    border-radius: 3px;
+    border-color: black;
+    border-width: 2px;
+    padding: 0px;
+}
+
+#buttonCon, #buttonRec {
+    display:inline-block;
+}

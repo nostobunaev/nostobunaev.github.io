@@ -4,14 +4,15 @@
     <link href="style1.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Offer Service</title>
+    <script src="serviceC.js" defer></script>
 </head>
 <body>
     <div class="header">
         <img src="logo.png" alt="InServiceLogo">
         <a href="index.html" class="button1">Home</a>
         <a href="service.html" class="button1">Service</a>
-        <a href="index.html" class="button1">My orders</a>
-        <a href="index.html" class="button2">Log in</a>
+        <a href="orders.html" class="button1">My orders</a>
+        <a href="login.html" class="button2">Log in</a>
         <a href="about.html" class="button2">About page</a>
     </div>
     <div class="content">
@@ -31,20 +32,21 @@
             </div>
             <div class="ftitle">
                 <label class="title">Write a title:</label>
-                <br><input type="text" name="title">
+                <br><input type="text" id="ftitle" name="title">
             </div>
-            <div class fdescription>
+            <div class="fdescription">
                 <label class="description">Write a description:</label>
-                <textarea rows="4" cols="32" name="description"></textarea>
+                <textarea rows="4" cols="32" id="fdescription" name="description"></textarea>
             </div>
             <div class="fprice">
                 <label class="price">Set price:</label>
-                <input type="text" name="price">
+                <input type="number" id="fprice" name="price">
                 <label:before>$</label:before>
             </div>
-            
+            <div id="formErrors">
+            </div>
             <div class="submit">
-                <input type="submit" value="Submit">
+                <input type="submit" id="submit" value="Submit">
             </div>
         </form>
     </div>
