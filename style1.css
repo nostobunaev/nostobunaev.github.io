@@ -43,7 +43,6 @@ body {
 }
 
 .info {
-    float: center;
     position: relative;
     left: 0px;
     top: 100px;
@@ -235,7 +234,7 @@ input.error  {
 }
 
 .buttonLogin {
-    position: flex;
+    display: flex;
     text-decoration:none;
     font-size: 12pt;
     border-radius: 3px;
@@ -245,7 +244,7 @@ input.error  {
 }
 
 .buttonReg {
-    position: flex;
+    display: flex;
     text-decoration:none;
     font-size: 12pt;
     border-radius: 3px;
@@ -255,7 +254,7 @@ input.error  {
 }
 
 .buttonRecover {
-    position: flex;
+    display: flex;
     text-decoration:none;
     font-size: 12pt;
     border-radius: 3px;
