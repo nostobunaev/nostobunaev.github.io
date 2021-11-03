@@ -28,20 +28,6 @@ function checkForm() {
         error.appendChild(errorEmail);
      }
   
-     if (password.value.length < 10 || password.value.length > 20) {
-        errorsFound = true;
-        let errorPass = document.createElement("li");
-        errorPass.textContent = "Password must be between 10 and 20 characters.";
-        error.appendChild(errorPass);
-     }
-  
-     if (!password.value || !/[a-z]/.test(password.value)) {
-        errorsFound = true;
-        let errorPass2 = document.createElement("li");
-        errorPass2.textContent = "Password must contain at least one lowercase character.";
-        error.appendChild(errorPass2);
-     }
-  
      if (!password.value || !/[A-Z]/.test(password.value)) {
         errorsFound = true;
         let errorPass3 = document.createElement("li");

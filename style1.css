@@ -42,15 +42,29 @@ body {
     font-family: Garamond, serif;
 }
 
-.info {
+.bodyInf {
+    background-image: url('photo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: 300px;
+    background-position-y: 80px;
+    background-size: 1000px, 1000px;
+
+}
+
+.info{
+
+    display: block;
     position: relative;
-    left: 0px;
-    top: 100px;
-    width: 600px;
-    margin: auto;
+    left: 15%;
+    top: 50pt;
+    width: 500px;
+
 }
 
 .info h1 {
+    position: relative;
+    text-align: center;
     font-size: 30pt;
 }
 
@@ -58,9 +72,16 @@ body {
     font-size: 18pt;
 }
 
+.infoP img {
+    display: block;
+    position: relative;
+    left: 500pt;
+    top: -160pt;
+}
+
 a.button3 {
     position: absolute;
-    left: 0px;
+    left: 40%;
     font-weight: 400;
     font-size: 15pt;
     color: black;
@@ -105,49 +126,6 @@ box-shadow: 0 3px rgb(167, 149, 145) inset;
     font-size: 20pt;
 }
 
-a.buttonR {
-    position: absolute;
-    left: 400px;
-    top: 300px;
-    text-decoration:none;
-    font-size: 18pt;
-    border-radius: 3px;
-    border-color: black;
-    border-width: 2px;
-    padding: 6px;
-}
-
-a.buttonR:hover { 
-    background: rgb(204, 192, 190); 
-}
-
-a.buttonR:active {
-background: rgb(204, 192, 190);
-box-shadow: 0 3px rgb(167, 149, 145) inset;
-}
-
-a.buttonF {
-    position: absolute;
-    left: 730px;
-    top: 300px;
-    text-decoration: none;
-    font-size: 18pt;
-    border-radius: 3px;
-    border-color: black;
-    border-width: 2px;
-    padding: 6px;
-
-}
-
-a.buttonF:hover { 
-    background: rgb(204, 192, 190); 
-}
-
-a.buttonF:active {
-background: rgb(204, 192, 190);
-box-shadow: 0 3px rgb(167, 149, 145) inset;
-}
-
 .content {
 
     color: black;
@@ -158,7 +136,7 @@ box-shadow: 0 3px rgb(167, 149, 145) inset;
     font-size: 18px;
     text-decoration: none;
     display: block;
-    width: 40%;
+    width: 34%;
     padding: 30px 90px 40px 90px;
     border: 1px solid rgba(0, 0, 0, 0.3);
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
@@ -204,7 +182,6 @@ input.error  {
 }
 
 .content2 {
-
     color: black;
     text-align: left;
     justify-content: center;
@@ -265,4 +242,99 @@ input.error  {
 
 #buttonCon, #buttonRec {
     display:inline-block;
+}
+
+.buttonDropDown {
+    background-color: rgb(231, 201, 201);
+    padding: 14px;
+    font-size: 20px;
+    border: none;
+    font-family: Garamond, serif;
+    cursor: pointer;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropDownMenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    font-size: 20px;
+    font-family: Garamond, serif;
+}
+
+.dropDownMenu a {
+    color: black;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropDownMenu {
+    display: block;
+}
+
+.dropdown:hover .buttonDropDown {
+    background-color: white
+}
+
+.orders{
+    position: absolute;
+    left: 2%;
+    top: 52pt;
+    display: block;
+}
+
+.orders a {
+    text-decoration:none;
+}
+
+.orders p {
+    display: block;
+    position: relative;
+    left: 2%;
+    width: 400px;
+}
+
+.pEx {
+    cursor: pointer;
+}
+
+.content3 {
+    color: black;
+    text-align: left;
+    justify-content: center;
+    margin: 5px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    width: 27%;
+    padding: 30px 40px 40px 90px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 35%;
+    top: 70px;
+    align-items: center;
+}
+
+.content3 img{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 79px;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+#orderP {
+
+    color:black;
+}
+
+#yourPrice {
+    width: 30px;
+    margin-bottom: 20px;
 }

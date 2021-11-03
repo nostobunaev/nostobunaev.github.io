@@ -3,7 +3,7 @@
 <head>
     <link href="style1.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>Recover access</title>
+    <title>Order confirmation</title>
 </head>
 <body>
     <div class="header">
@@ -20,15 +20,17 @@
         <a href="login.html" class="button2">Log in</a>
         <a href="about.html" class="button2">About page</a>
     </div>
-    <div class=content2>
-        <h1>Restoring access</h1>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" >
-         </div>
-         <div class="recnav">
-            <br><input type="submit" id="buttonCon" value="Continue">
-            <input type="submit" id="buttonRec" onclick="location.href='login.html';" value="Back">
-         </div>
+    <div class="content">
+        <p><a href="profile.html">John Smith</a> offering locksmith <br><b>Price:</b> 50$</p>
+        <p><b>Address:</b> 1234 Exmaple st, Apt 32</b></p>
+        <p><b>Time of serivce:</b> 12:12 PM</p>
+        <p><b>John Smith phone:</b> (123) 456 7890</p>
+        <p><b>Service description:</b> The steel pipe in the kitchen needs to be replaced. Old pipe leaking.</p>
+        <form>
+            <label class="urPrice">Offer your price:</label>
+            <br><input type="number" id="yourPrice" name="urPrice" value="50">
+            <label:before>$</label:before>
+            <br><input type="submit" id="submit" value="Accept offer">
+        </form>
     </div>
 </body>

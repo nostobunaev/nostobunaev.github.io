@@ -39,6 +39,13 @@ function checkForm() {
         errorPrice.textContent = "Missing price.";
         error.appendChild(errorPrice);
     }
+
+    if (price.value <0) {
+        errorsFound = true;
+        let errorPrice2 = document.createElement("li");
+        errorPrice2.textContent = "Price can't be negative.";
+        error.appendChild(errorPrice2);
+    }
     
     if (errorsFound === false) {
         error.classList.add('hide');
