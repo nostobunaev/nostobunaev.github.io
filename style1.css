@@ -290,6 +290,7 @@ input.error  {
 
 .orders a {
     text-decoration:none;
+    color:black;
 }
 
 .orders p {
@@ -330,7 +331,6 @@ input.error  {
 }
 
 #orderP {
-
     color:black;
 }
 
