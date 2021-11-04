@@ -27,26 +27,33 @@ function checkForm() {
         errorEmail.textContent = "Invalid or missing email address.";
         error.appendChild(errorEmail);
      }
+
+     if (password.value.length < 8) {
+         errorsFound = true;
+         let errorPass = document.createElement("li");
+         errorPass.textContent = "Password must contain at least 10 characters.";
+         error.appendChild(errorPass);
+     }
   
      if (!password.value || !/[A-Z]/.test(password.value)) {
         errorsFound = true;
-        let errorPass3 = document.createElement("li");
-        errorPass3.textContent = "Password must contain at least one uppercase character.";
-        error.appendChild(errorPass3);
+        let errorPass2 = document.createElement("li");
+        errorPass2.textContent = "Password must contain at least one uppercase character.";
+        error.appendChild(errorPass2);
      }
   
      if (!password.value || !/[0-9]/.test(password.value)) {
         errorsFound = true;
-        let errorPass4 = document.createElement("li");
-        errorPass4.textContent = "Password must contain at least one digit.";
-        error.appendChild(errorPass4);
+        let errorPass3 = document.createElement("li");
+        errorPass3.textContent = "Password must contain at least one digit.";
+        error.appendChild(errorPass3);
      }
   
      if (passwordConfirm && password.value !== passwordConfirm.value) {
         errorsFound = true;
-        let errorPass5 = document.createElement("li");
-        errorPass5.textContent = "Password and confirmation password don't match.";
-        error.appendChild(errorPass5);
+        let errorPass4 = document.createElement("li");
+        errorPass4.textContent = "Password and confirmation password don't match.";
+        error.appendChild(errorPass4);
      }
   
      if (errorsFound === false) {
@@ -55,11 +62,6 @@ function checkForm() {
   } 
   
 document.getElementById("submit").addEventListener("click", function(event) {
-    if (error.length > 1000) {
-        error.innerHTML = '';
-    }
-    else {
-        checkForm();
-        event.preventDefault();
-    }
+   checkForm();
+   event.preventDefault();
 });
