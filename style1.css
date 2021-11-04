@@ -304,27 +304,7 @@ input.error  {
     cursor: pointer;
 }
 
-.content3 {
-    color: black;
-    text-align: left;
-    justify-content: center;
-    margin: 5px;
-    line-height: 1.5;
-    box-sizing: border-box;
-    font-size: 18px;
-    text-decoration: none;
-    display: block;
-    width: 27%;
-    padding: 30px 40px 40px 90px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
-    position: relative;
-    left: 35%;
-    top: 70px;
-    align-items: center;
-}
-
-.content3 img{
+.content img{
     border: 1px solid rgba(0, 0, 0, 0.3);
     border-radius: 79px;
     box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
