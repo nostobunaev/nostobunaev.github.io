@@ -741,4 +741,6 @@ input.error  {
     margin-top: 40px;
 }
 
-
+#faq li {
+    font-size: 24px;
+}
