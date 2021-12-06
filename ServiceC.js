@@ -55,4 +55,10 @@ function checkForm() {
 document.getElementById("submit").addEventListener("click", function(event) {
     checkForm();
     event.preventDefault();
+    
 });
+
+let title = document.getElementById("ftitle")
+let desc = document.getElementById("fdescription")
+let price = document.getElementById("fprice")
+let offer = document.getElementById("offers")

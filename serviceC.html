@@ -18,11 +18,23 @@
             </div>
         </div>
         <a href="orders.html" class="button1">My orders</a>
+        <a href="calculator.html" class="button1">Calculator</a>
         <a href="login.html" class="button2">Log in</a>
         <a href="about.html" class="button2">About page</a>
+        <a href="feedback.html" class="button2">Feedback</a>
+        <div class="dropd">
+            <button class="buttonDrop">FAQ</button>
+            <div class="buttonMenu">
+              <a href="faq.html">How to request service</a>
+              <a href="faq2.html">How to accept service</a>
+              <a href="faq3.html">How to check your orders</a>
+              <a href="faq4.html">how to get feedback</a>
+              <a href="faq5.html">Other questions</a>
+            </div>
+        </div>
     </div>
     <div class="content">
-        <h1>Specify the field of service looking for:</h1>
+        <h1>Specify the field of service:</h1>
         <form class="formService">
             <div class="fcombobox">
                 <label for="servicecombo">Choose a service:</label>
@@ -38,21 +50,24 @@
             </div>
             <div class="ftitle">
                 <label class="title">Write a title:</label>
-                <br><input type="text" id="ftitle" name="title">
+                <br><input type="text" id="ftitle" name="title" placeholder="title">
             </div>
             <div class="fdescription">
                 <label class="description">Write a description:</label>
-                <textarea rows="4" cols="32" id="fdescription" name="description"></textarea>
+                <br><textarea rows="4" cols="26" id="fdescription" name="description" placeholder="description"></textarea>
+            </div>
+            <div>
+                <label for="photoA">Select a photo to attach:</label>
+                <input type="file" id="photoAt" name="photoA">
             </div>
             <div class="fprice">
                 <label class="price">Set price:</label>
-                <input type="number" id="fprice" name="price">
-                <label:before>$</label:before>
+                <br><input type="number" id="fprice" name="price" placeholder="price">
             </div>
-            <div id="formErrors">
-            </div>
+            <ul id="formErrors">
+            </ul>
             <div class="submit">
-                <input type="submit" id="submit" value="Submit">
+                <input onclick="location.href = 'searching.html'" type="submit" id="submit" value="Submit">
             </div>
         </form>
     </div>

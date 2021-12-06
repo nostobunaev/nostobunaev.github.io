@@ -17,8 +17,20 @@
             </div>
         </div>
         <a href="orders.html" class="button1">My orders</a>
+        <a href="calculator.html" class="button1">Calculator</a>
         <a href="login.html" class="button2">Log in</a>
         <a href="about.html" class="button2">About page</a>
+        <a href="feedback.html" class="button2">Feedback</a>
+        <div class="dropd">
+            <button class="buttonDrop">FAQ</button>
+            <div class="buttonMenu">
+              <a href="faq.html">How to request service</a>
+              <a href="faq2.html">How to accept service</a>
+              <a href="faq3.html">How to check your orders</a>
+              <a href="faq4.html">how to get feedback</a>
+              <a href="faq5.html">Other questions</a>
+            </div>
+        </div>
     </div>
     <div class="content">
         <p><a href="profile.html">John Smith</a> offering locksmith <br><b>Price:</b> 50$</p>
@@ -27,10 +39,9 @@
         <p><b>John Smith phone:</b> (123) 456 7890</p>
         <p><b>Service description:</b> The steel pipe in the kitchen needs to be replaced. Old pipe leaking.</p>
         <form>
-            <label class="urPrice">Offer your price:</label>
-            <br><input type="number" id="yourPrice" name="urPrice" value="50">
-            <label:before>$</label:before>
-            <br><input type="submit" id="submit" value="Accept offer">
+            <br><input type="button" id="oPic" onclick="location.href = 'locksmith.jpg'" value="See Photo">
+            <input type="submit" id="submit" value="Accept offer">
+            <input type="button" id="oCancel" onclick="location.href = 'serviceP.html'" value="Cancel">
         </form>
     </div>
 </body>

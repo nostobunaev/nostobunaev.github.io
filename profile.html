@@ -4,6 +4,9 @@
     <link href="style1.css" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
     <title>Profile: John Smith</title>
+    <script>
+        var popUpList = $('<div><input type="radio">A<br><input type="radio">B<br><input type="radio">C</div>')
+    </script>
 </head>
 <body>
     <div class="header">
@@ -17,8 +20,20 @@
             </div>
         </div>
         <a href="orders.html" class="button1">My orders</a>
+        <a href="calculator.html" class="button1">Calculator</a>
         <a href="login.html" class="button2">Log in</a>
         <a href="about.html" class="button2">About page</a>
+        <a href="feedback.html" class="button2">Feedback</a>
+        <div class="dropd">
+            <button class="buttonDrop">FAQ</button>
+            <div class="buttonMenu">
+              <a href="faq.html">How to request service</a>
+              <a href="faq2.html">How to accept service</a>
+              <a href="faq3.html">How to check your orders</a>
+              <a href="faq4.html">how to get feedback</a>
+              <a href="faq5.html">Other questions</a>
+            </div>
+        </div>
     </div>
 
     <div class="content">
@@ -26,6 +41,8 @@
         <p><b>Name:</b> John Smith</p>
         <p><b>Member since:</b> September 1, 2021</p>
         <p><b>Rating:</b> 4.8 out of 5</p>
-        <a href="report.html">Report</a>
+        <input type="button" id="oRev" onclick="location.href = 'review.html'" value="Rate user">
+        <input type="button" id="oRep" onclick="location.href = 'report.html'" value="Report">
+        
     </div>
 </body>

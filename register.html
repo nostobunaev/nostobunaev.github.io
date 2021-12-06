@@ -7,42 +7,54 @@
     <script src="register.js" type="text/javascript" defer></script>
 </head>
 <body>
-    <div class="header">
-        <img src="logo.png" alt="InServiceLogo">
-        <a href="index.html" class="button1">Home</a>
-        <div class="dropdown">
-         <button class="buttonDropDown">Service</button>
-         <div class="dropDownMenu">
-           <a href="serviceC.html">Request service</a>
-           <a href="serviceP.html">Find service</a>
-         </div>
-     </div>
-        <a href="orders.html" class="button1">My orders</a>
-        <a href="login.html" class="button2">Log in</a>
-        <a href="about.html" class="button2">About page</a>
-    </div>
-    <div class="content2">
+   <div class="header">
+      <img src="logo.png" alt="InServiceLogo">
+      <a href="index.html" class="button1">Home</a>
+      <div class="dropdown">
+          <button class="buttonDropDown">Service</button>
+          <div class="dropDownMenu">
+            <a href="serviceC.html">Request service</a>
+            <a href="serviceP.html">Find service</a>
+          </div>
+      </div>
+      <a href="orders.html" class="button1">My orders</a>
+      <a href="calculator.html" class="button1">Calculator</a>
+      <a href="login.html" class="button2">Log in</a>
+      <a href="about.html" class="button2">About page</a>
+      <a href="feedback.html" class="button2">Feedback</a>
+      <div class="dropd">
+          <button class="buttonDrop">FAQ</button>
+          <div class="buttonMenu">
+            <a href="faq.html">How to request service</a>
+            <a href="faq2.html">How to accept service</a>
+            <a href="faq3.html">How to check your orders</a>
+            <a href="faq4.html">how to get feedback</a>
+            <a href="faq5.html">Other questions</a>
+          </div>
+      </div>
+  </div>
+    <div class="content3">
         <form>
-            <h1>User Registration</h1>
+            <h1>Registration</h1>
             <div>
                <label for="firstName">First Name:</label>
-               <input type="text" id="firstName" name="firstName">
+               <input type="text" id="firstName" name="firstName" placeholder="first name">
             </div>
             <div>
                 <label for="secondName">Second Name:</label>
-                <input type="text" id="secondName" name="secondName">
+                <input type="text" id="secondName" name="secondName" placeholder="second name">
              </div>
             <div>
                <label for="email">Email:</label>
-               <input type="email" id="email" name="email" >
+               <input type="email" id="email" name="email" placeholder="email">
             </div>
             <div>
                <label for="password">Password:</label>
-               <input type="password" id="password" name="password" >
+               <input type="password" id="password" name="password" placeholder="password" >
             </div>
             <div>
                <label for="passwordConfirm">Confirm Password:</label>
-               <input type="password" id="passwordConfirm" name="passwordConfirm" >
+               <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="repeat password" >
             </div>
             <div id="formErrors"></div>
             <div>

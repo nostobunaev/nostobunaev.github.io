@@ -8,101 +8,122 @@
 </head>
 
 <body>
-    <div class="header">
-        <img src="logo.png" alt="InServiceLogo">
-        <a href="index.html" class="button1">Home</a>
-        <div class="dropdown">
-            <button class="buttonDropDown">Service</button>
-            <div class="dropDownMenu">
-              <a href="serviceC.html">Request service</a>
-              <a href="serviceP.html">Find service</a>
+    <article>
+        <div class="header">
+            <img src="logo.png" alt="InServiceLogo">
+            <a href="index.html" class="button1">Home</a>
+            <div class="dropdown">
+                <button class="buttonDropDown">Service</button>
+                <div class="dropDownMenu">
+                <a href="serviceC.html">Request service</a>
+                <a href="serviceP.html">Find service</a>
+                </div>
             </div>
-        </div>
-        <a href="orders.html" class="button1">My orders</a>
-        <a href="login.html" class="button2">Log in</a>
-        <a href="about.html" class="button2">About page</a>
-    </div>
-    <div class="orders">
-        <div id="barr">
-            <a href="#current">Current |</a>
-            <a href="#today">Today |</a>
-            <a href="#past">Past 30 days |</a>
-            <a href="#time">All Time</a>
-        </div>
-        <div id="current">
-            <h2><a href="#barr">Current</a></h2>
-            <p><b><a href="orderconfirm.html" >Locksmith: Client</a></b></p>
-        </div>
-        <div id="today">
-            <h2><a href="#barr">Today</a></h2>
-            <p><b>No orders today</b></p>
-        </div>
-        <div id="past">
-            <h2><a href="#barr">Past 30 days:</a></h2>
-            <p onclick="hide1()" class="pEx" id="p11"><b>Locksmith: Performer.</b> (Show more)</p>
-            <p id="p1" style="display:none"><br><b>Title:</b> Clearing a blockage in a pipe
-            <br><b>Descirption:</b> The steel pipe in the kitchen is clogged.
-            <br><b>Client:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 40$</p>
-            
-            <p onclick="hide2()" class="pEx" id="p22"><b>Moving: Client.</b> (Show more)</p>
-            <p id="p2" style="display:none"><br><b>Title:</b> Dragging two cabinets
-            <br><b>Descirption:</b> I need a loader to move 2 closets from the second 
-            floor to a truck. Each cabinet is one meter tall and weighs 30 kg.
-            <br><b>Performer:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 20$</p>
+            <a href="orders.html" class="button1">My orders</a>
+            <a href="calculator.html" class="button1">Calculator</a>
+            <a href="login.html" class="button2">Log in</a>
+            <a href="about.html" class="button2">About page</a>
+            <a href="feedback.html" class="button2">Feedback</a>
+            <div class="dropd">
+                <button class="buttonDrop">FAQ</button>
+                <div class="buttonMenu">
+                <a href="faq.html">How to request service</a>
+                <a href="faq2.html">How to accept service</a>
+                <a href="faq3.html">How to check your orders</a>
+                <a href="faq4.html">How to get feedback</a>
+                <a href="faq5.html">Other questions</a>
+                </div>
+            </div>
+        <main>
+                <div id="content">
+                <div class="orders">
+                    <div id="barr">
+                        <a href="#current">Current |</a>
+                        <a href="#today">Today |</a>
+                        <a href="#past">Past 30 days |</a>
+                        <a href="#time">All Time</a>
+                    </div>
+                    <div id="current">
+                        <h2><a href="#barr">Current</a></h2>
+                        <p><b><a href="orderconfirm.html" >Locksmith: Client</a></b></p>
+                    </div>
+                    <div id="today">
+                        <h2><a href="#barr">Today</a></h2>
+                        <p><b>No orders today</b></p>
+                    </div>
+                    <div id="past">
+                        <h2><a href="#barr">Past 30 days:</a></h2>
+                        <p onclick="hide1()" class="pEx" id="p11"><b>Locksmith: Performer.</b> (Show more)</p>
+                        <p id="p1" style="display:none"><br><b>Title:</b> Clearing a blockage in a pipe
+                        <br><b>Descirption:</b> The steel pipe in the kitchen is clogged.
+                        <br><b>Client:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 40$</p>
+                        
+                        <p onclick="hide2()" class="pEx" id="p22"><b>Moving: Client.</b> (Show more)</p>
+                        <p id="p2" style="display:none"><br><b>Title:</b> Dragging two cabinets
+                        <br><b>Descirption:</b> I need a loader to move 2 closets from the second 
+                        floor to a truck. Each cabinet is one meter tall and weighs 30 kg.
+                        <br><b>Performer:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 20$</p>
 
 
-        </div>
-        <div id="time">
-            <h2><a href="#barr">All time:</a></h2>
-            <p onclick="hide3()" class="pEx" id="p33"><b>Locksmith: Performer.</b> (Show more)</p>
-            <p id="p3" style="display:none"><br><b>Title:</b> Clearing a blockage in a pipe
-            <br><b>Descirption:</b> The steel pipe in the kitchen is clogged
-            <br><b>Client:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 40$</p>
+                    </div>
+                    <div id="ftime">
+                        <h2><a href="#barr">All time:</a></h2>
+                        <p onclick="hide3()" class="pEx" id="p33"><b>Locksmith: Performer.</b> (Show more)</p>
+                        <p id="p3" style="display:none"><br><b>Title:</b> Clearing a blockage in a pipe
+                        <br><b>Descirption:</b> The steel pipe in the kitchen is clogged
+                        <br><b>Client:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 40$</p>
 
-            <p onclick="hide4()" class="pEx" id="p44"><b>Moving: Client.</b> (Show more)</p>
-            <p id="p4" style="display:none"><br><b>Title:</b> Dragging two cabinets
-            <br><b>Descirption:</b> I need a loader to move 2 closets from the second 
-            floor to a truck. Each cabinet is one meter tall and weighs 30 kg
-            <br><b>Performer:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 20$</p>
+                        <p onclick="hide4()" class="pEx" id="p44"><b>Moving: Client.</b> (Show more)</p>
+                        <p id="p4" style="display:none"><br><b>Title:</b> Dragging two cabinets
+                        <br><b>Descirption:</b> I need a loader to move 2 closets from the second 
+                        floor to a truck. Each cabinet is one meter tall and weighs 30 kg
+                        <br><b>Performer:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 20$</p>
 
-            <p onclick="hide5()" class="pEx" id="p55"><b>Auto repair: Performer.</b> (Show more)</p>
-            <p id="p5" style="display:none"><br><b>Title:</b> Changing wheels
-            <br><b>Descirption:</b> I need help changing 4 wheels on a Toyota Camry
-            <br><b>Client:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 60$</p>
+                        <p onclick="hide5()" class="pEx" id="p55"><b>Auto repair: Performer.</b> (Show more)</p>
+                        <p id="p5" style="display:none"><br><b>Title:</b> Changing wheels
+                        <br><b>Descirption:</b> I need help changing 4 wheels on a Toyota Camry
+                        <br><b>Client:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 60$</p>
 
-            <p onclick="hide6()" class="pEx" id="p66"><b>Cleaning: Performer.</b> (Show more)</p>
-            <p id="p6" style="display:none"><br><b>Title:</b> Cleaning the room
-            <br><b>Descirption:</b> I need a cleaner to clean the room after the event
-            Cleaning area 300 square meters.
-            <br><b>Client:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 100$</p>
-            
-            <p onclick="hide7()" class="pEx" id="p77"><b>Tech: Client.</b> (Show more)</p>
-            <p id="p7" style="display:none"><br><b>Title:</b> Replacing the screen on the phone
-            <br><b>Descirption:</b> Screen crashed on Samsung super 3ds, 5G, 1000 megapixels. 
-            I need a screen replacement
-            <br><b>Performer:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 150$</p>
-            
-            <p onclick="hide8()" class="pEx" id="p88"><b>Beauty: Client.</b> (Show more)</p>
-            <p id="p8" style="display:none"><br><b>Title:</b> Makeup Artist Wanted. URGENTLY!
-            <br><b>Descirption:</b> I need a makeup artist before an important event. URGENTLY!
-            <br><b>Performer:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 200$</p>
-            
-            <p onclick="hide9()" class="pEx" id="p99"><b>Other: Performer.</b> (Show more)</p>
-            <p id="p9" style="display:none"><br><b>Title:</b> Math Tutor Wanted
-            <br><b>Descirption:</b> My son is finishing school this year, and he needs to 
-            pass the final exams. Unfortunately my son has big problems with math.
-            <br><b>Client:</b> <a href="profile.html">John Smith</a>
-            <br><b>Price:</b> 0$</p>
+                        <p onclick="hide6()" class="pEx" id="p66"><b>Cleaning: Performer.</b> (Show more)</p>
+                        <p id="p6" style="display:none"><br><b>Title:</b> Cleaning the room
+                        <br><b>Descirption:</b> I need a cleaner to clean the room after the event
+                        Cleaning area 300 square meters.
+                        <br><b>Client:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 100$</p>
+                        
+                        <p onclick="hide7()" class="pEx" id="p77"><b>Tech: Client.</b> (Show more)</p>
+                        <p id="p7" style="display:none"><br><b>Title:</b> Replacing the screen on the phone
+                        <br><b>Descirption:</b> Screen crashed on Samsung super 3ds, 5G, 1000 megapixels. 
+                        I need a screen replacement
+                        <br><b>Performer:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 150$</p>
+                        
+                        <p onclick="hide8()" class="pEx" id="p88"><b>Beauty: Client.</b> (Show more)</p>
+                        <p id="p8" style="display:none"><br><b>Title:</b> Makeup Artist Wanted. URGENTLY!
+                        <br><b>Descirption:</b> I need a makeup artist before an important event. URGENTLY!
+                        <br><b>Performer:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 200$</p>
+                        
+                        <p onclick="hide9()" class="pEx" id="p99"><b>Other: Performer.</b> (Show more)</p>
+                        <p id="p9" style="display:none"><br><b>Title:</b> Math Tutor Wanted
+                        <br><b>Descirption:</b> My son is finishing school this year, and he needs to 
+                        pass the final exams. Unfortunately my son has big problems with math.
+                        <br><b>Client:</b> <a href="profile.html">John Smith</a>
+                        <br><b>Price:</b> 0$</p>
 
 
-        </div>
-    </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">
+            <p>dwdw</p>
+        </footer>
+    </article>
 </body>
+</html>

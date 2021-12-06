@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style1.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <script src="feedback.js" type="text/javascript" defer></script>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="InServiceLogo">
+        <a href="index.html" class="button1">Home</a>
+        <div class="dropdown">
+            <button class="buttonDropDown">Service</button>
+            <div class="dropDownMenu">
+              <a href="serviceC.html">Request service</a>
+              <a href="serviceP.html">Find service</a>
+            </div>
+        </div>
+        <a href="orders.html" class="button1">My orders</a>
+        <a href="calculator.html" class="button1">Calculator</a>
+        <a href="login.html" class="button2">Log in</a>
+        <a href="about.html" class="button2">About page</a>
+        <a href="feedback.html" class="button2">Feedback</a>
+        <div class="dropd">
+            <button class="buttonDrop">FAQ</button>
+            <div class="buttonMenu">
+              <a href="faq.html">How to request service</a>
+              <a href="faq2.html">How to accept service</a>
+              <a href="faq3.html">How to check your orders</a>
+              <a href="faq4.html">how to get feedback</a>
+              <a href="faq5.html">Other questions</a>
+            </div>
+        </div>
+    </div>
+    <div class="content4">
+        <form>
+            <h1>Leave your contacts for us to contact you</h1>
+            <div>
+                <input type="text" id="fname" name="fname" placeholder="Name" required>
+             </div>
+            <div>
+               <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div>
+               <input type="tel" id="phone" name="phone" placeholder="Phone" required>
+            </div>
+            <div>
+
+                <input type="date" id="time" name="conv-time" value="2021-12-05"
+                    min="2021-12-05" max="2022-1-31" required>
+            </div>
+            <div id="addresss">
+                <input type="checkbox" id="cbCountry" onclick="hide2()">
+                <p>Check if the address is not in the US</p>
+                <input type="country" class="address" id="fCountry" placeholder="County" style="display:none">
+                <input type="state" class="address" id="fState" placeholder="State">
+                <input type="city" class="address" id="fCity" placeholder="City" required>
+                <input type="street" class="address" id="fStreet" placeholder="Street" required>
+                <input type="zip" class="address" id="fZip" placeholder="Zip" pattern="{5}">
+                
+            </div>
+            <div id="rad">
+                <p>Select the convenient way of communication</p>
+                <input type="radio" id="phonef" name="fback" value="Phone" checked>
+                <label for="phonef">Phone</label><br>
+                <input type="radio" id="emailf" name="fback" value="Email">
+                <label for="emailf">Email</label><br>
+            </div>
+            <div id="formErrors"></div>
+            <div>
+               <br><input type="submit" id="submit" value="Submit">
+            </div>
+         </form>
+
+</body>
+</html>
